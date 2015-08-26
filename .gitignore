@@ -1,0 +1,13 @@
+*.pyc
+*.swp
+*.swo
+*.kpf
+*.egg-info/
+.idea
+.tox
+.coverage
+tmp/
+dist/
+env/
+.DS_Store
+build/
