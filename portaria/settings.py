@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 # Quick-start development settings - unsuitable for production
@@ -75,16 +75,16 @@ WSGI_APPLICATION = 'portaria.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'db_portaria',
-#         'USER': 'admin',
-#         'PASSWORD': 'uiop0987',
-#         'HOST': 'localhost',
-#         'PORT': '',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'db_portaria',
+        'USER': 'admin',
+        'PASSWORD': 'uiop0987',
+        'HOST': 'localhost',
+        'PORT': '',
+    }
+}
 
 # Parse database configuration from $DATABASE_URL
 import dj_database_url
